@@ -11,7 +11,7 @@
     <link rel="stylesheet" type="text/css" href="vendors/css/grid.css">
     <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i|Nanum+Pen+Script" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="resources/js/main.js"></script>
+    <!-- <script src="resources/js/main.js"></script>-->
 </head>
 
 <body>
@@ -38,24 +38,32 @@
                 </li>
             </ul>
         </div>
-        <section id="about" class="row">
-            <div class="col span-1-of-2 picture">
-                <img src="resources/img/profile_pic.jpg" alt="about_picture">
-                <h2>Manel Charouni, Web developer</h2>
+        <section id="about">
+            <div class="row">
+                <div class="col span-1-of-2 picture">
+                    <img class="about_pic" src="resources/img/profile_pic.jpg" alt="about_picture">
+                    <h2>Manel Charouni, Web developer</h2>
+                </div>
+                <div class="col span-1-of-2 description">
+                    <p>A Tunisia-based web developer who's down to learn something new everyday.</p>
+                    <p>Six years ago, ending up a web developer was nothing of what I've planned back then...</p>
+                    <p id="hidden-description">After studying biology in high-school, the initial and natural plan was to pursue chemical enginering
+                        in university. But what happened was I rethought my carrer plans and digged deep into my real passions
+                        and how intriguing computer science was to me. By exploring and combining my passion, purpose, and
+                        what I really wanted, I started software engineering studies, and am most grateful for doing so.
+                        I have learnt a lot ever since and develepod a true passion for web and mobile development. I have
+                        experienced life abroad and I strive for diversity and enjoy working within multicultural teams.
+                        <br> Please reach out to me through facebook, skype, linkedIn or Gmail to tell you more!
+                        <br> Thanks for passing by !
+                    </p>
+                    <a class="btn" id="read-more" onclick="toggleVisibility()">Read more</a>
+                </div>
             </div>
-            <div class="col span-1-of-2 description">
-                <p>A Tunisia-based web developer who's down to learn something new everyday.</p>
-                <p>Six years ago, ending up a web developer was nothing of what I've planned back then...</p>
-                <p id="hidden-description">After studying biology in high-school, the initial and natural plan was to pursue chemical enginering in
-                    university. But what happened was I rethought my carrer plans and digged deep into my real passions and
-                    how intriguing computer science was to me. By exploring and combining my passion, purpose, and what I
-                    really wanted, I started software engineering studies, and am most grateful for doing so. I have learnt
-                    a lot ever since and develepod a true passion for web and mobile development. I have experienced life
-                    abroad and I strive for diversity and enjoy working within multicultural teams.
-                    <br> Please reach out to me through facebook, skype, linkedIn or Gmail to tell you more!
-                    <br> Thanks for passing by !
-                </p>
-                <a class="btn" id="read-more" onclick="toggleVisibility()">Read more</a>
+            <img src="resources/img/manel_working.png">
+            <div class="row" id="coding">
+            </div>
+            <img src="resources/img/manel_not_working.png">
+            <div class="row" id="nature">
             </div>
         </section>
         <section id="best_moments">
@@ -127,7 +135,107 @@
                 <a class="btn" href="https://drive.google.com/drive/folders/0B8hzX2Z9IYnPUjB6UVBVbklrZ0k?usp=sharing">check project</a>
             </div>
         </section>
+        <footer id="contact">
+            <div class="row">
+                <ul class="social-links ">
+                    <li>
+                        <a href="https://www.facebook.com/ma.nel.524">
+                            <i class="ion-logo-facebook social-icon "></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/manel-charouni-bb9b14105/">
+                            <i class="ion-logo-linkedin social-icon "></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/manel24">
+                            <i class="ion-logo-github social-icon ">
+                            </i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="ion-logo-skype social-icon ">
+                            </i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="# ">
+                            <i></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="row copyrights">
+                <p>
+                    Copyright &copy Manel Charouni 2018. ALl rights reserved.
+                </p>
+            </div>
+
+        </footer>
     </div>
+    <!-- TODO: externalize this code (in the main.js), for now, there's an issue when I put it in the file -->
+    <script>
+        $(document).ready(function () {
+            // Add scrollspy to <body>
+            $('body').scrollspy({
+                target: "#nav",
+                offset: 50
+            });
+
+            // Add smooth scrolling on all links inside the navbar
+            $("#nav a").on('click', function (event) {
+                // Make sure this.hash has a value before overriding default behavior
+                if (this.hash !== "") {
+                    // Prevent default anchor click behavior
+                    event.preventDefault();
+
+                    // Store hash
+                    var hash = this.hash;
+
+                    // Using jQuery's animate() method to add smooth page scroll
+                    // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 800, function () {
+
+                        // Add hash (#) to URL when done scrolling (default click behavior)
+                        window.location.hash = hash;
+                    });
+                } // End if
+            });
+        });
+        window.onscroll = function () {
+            stickHeader()
+        };
+
+        var header = document.getElementById("nav");
+        var sticky = header.offsetTop;
+        var read_more = document.getElementById("read-more")
+
+        function stickHeader() {
+            if (window.pageYOffset >= sticky) {
+                header.classList.remove("header");
+                header.classList.add("sticky");
+            } else {
+                header.classList.remove("sticky");
+                header.classList.add("header");
+            }
+        }
+
+        function toggleVisibility() {
+            var p = document.getElementById("hidden-description");
+            if (p.style.display === "none") {
+                p.style.display = "block";
+                read_more.innerText = "Read less"
+            } else {
+                p.style.display = "none";
+                read_more.innerText = "Read more"
+
+            }
+        }
+    </script>
 </body>
 
 </html>

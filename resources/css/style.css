@@ -104,6 +104,7 @@ html {
   transition: color 0.2s;
 }
 
+h3,
 .header li a,
 .sticky li a {
   text-decoration: none;
@@ -112,6 +113,8 @@ html {
   letter-spacing: 1px;
   line-height: 1.3;
 }
+
+/* TODO:  fix this issue: pictures appearing over the transparent nav header when scrolling */
 
 .sticky {
   position: fixed;
@@ -139,7 +142,7 @@ html {
   margin-bottom: 10px;
 }
 
-#about img {
+.about_pic {
   height: 200px;
   width: 200px;
   border-radius: 50%;
@@ -150,6 +153,10 @@ html {
   text-align: center;
   font-family: "Nanum Pen Script", cursive;
   font-weight: lighter;
+}
+
+#about img {
+  text-align: center;
 }
 
 .description {
@@ -169,6 +176,22 @@ html {
 
 #hidden-description {
   display: none;
+}
+
+#coding,
+#nature {
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 30em;
+}
+
+#coding {
+  background-image: url('img/coding.jpg');
+}
+
+#nature {
+  background-image: url('img/out.jpg')
 }
 
 /* ------------------------------ */
@@ -233,8 +256,11 @@ html {
 
 /* ------------------------------ */
 
+/* TODO: Harmonize the sizes (height/width) of the projects     */
+
 #projects {
   margin-top: 5px;
+  margin-bottom: 5px;
 }
 
 .project {
@@ -255,4 +281,58 @@ html {
   transform: scale(1.15);
   transition: transform 0.5s;
   opacity: 0.7;
+}
+
+/* ------------------------------ */
+
+/*            CONTACT             */
+
+/* ------------------------------ */
+
+footer {
+  background-color: #6eb48c;
+  color: #e3e3e3;
+  ;
+}
+
+footer a {
+  list-style: none;
+  text-decoration: none;
+  color: #e3e3e3;
+  ;
+}
+
+#contact .row {
+  text-align: center;
+}
+
+.social-links li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.social-icon {
+  font-size: 200%;
+  transition: color 0.2s;
+}
+
+.ion-logo-facebook:hover {
+  color: #284d9ec0
+}
+
+.ion-logo-linkedin:hover {
+  color: #0077B5;
+}
+
+.ion-logo-github:hover {
+  color: #333
+}
+
+.ion-logo-skype:hover {
+  color: #00aff0
+}
+
+.copyrights {
+  text-align: center;
+  font-family: "Nanum Pen Script", cursive !important;
 }
