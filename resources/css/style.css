@@ -8,7 +8,7 @@
 
 /* ------------------------------ */
 
-/* Basic setup 
+/*         Basic setup            */
 
 /* ------------------------------ */
 body {
@@ -20,7 +20,7 @@ body {
 html {
   background-color: #fff;
   color: #555;
-  font-family: "Lora", "Arial", "sans-serif";
+  font-family: "Cuprum", "Arial", "sans-serif";
   font-size: 20px;
   text-rendering: optimizeLegibility;
 }
@@ -33,7 +33,31 @@ html {
 
 /* ------------------------------ */
 
-/* Reusable components
+/*       Reusable components      */
+
+/* ------------------------------ */
+
+.btn {
+  border: 1px solid #313131;
+  border-left: 10px solid #313131;
+  padding: 10px 30px;
+  background: rgb(3, 77, 64);
+  color: #b2dfdb;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: medium;
+  font-family: "Cuprum", "Arial";
+}
+
+.btn:hover {
+  cursor: pointer;
+  background: #ffebee;
+  color: rgb(3, 77, 64);
+}
+
+/* ------------------------------ */
+
+/*           HEADER               */
 
 /* ------------------------------ */
 .top-container {
@@ -73,14 +97,14 @@ html {
 .header a:hover,
 .sticky a:active,
 .sticky a:hover {
-  color: #b2dfdb;
+   color: #ffebee;
   transition: color 0.2s;
 }
 .header li a,
 .sticky li a {
   text-decoration: none;
   transition: color 0.2s;
-  font-family: "Lora", "Arial";
+  font-family: "Cuprum", "Arial";
   letter-spacing: 1px;
   line-height: 1.3;
 }
@@ -96,4 +120,39 @@ html {
 .heading {
   border: 1px solid #313131;
   padding: 10px 30px;
+}
+
+/* ------------------------------ */
+
+/*             ABOUT              */
+
+/* ------------------------------ */
+
+#about {
+  text-align: center;
+}
+#about img {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  border: 2px solid #313131;
+}
+
+#about h2 {
+  text-align: center;
+  font-family: "Nanum Pen Script", cursive;
+  font-weight: lighter;
+}
+.description {
+  text-align: center;
+}
+.description p {
+  font-family: "Nanum Pen Script", "Arial";
+  font-weight: 400;
+  font-style: italic;
+  font-size: 120%;
+}
+
+#hidden-description {
+  display: none;
 }
