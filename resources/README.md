@@ -2,7 +2,7 @@
 
 It is a Web Portfolio designed and developed for me for self-selling purposes.
 
-# Features:
+### Features:
 
 - Display Manel Charouni ABOUT section.
 - Display Manel Charouni BEST MOMENTS.
@@ -13,7 +13,7 @@ It is a Web Portfolio designed and developed for me for self-selling purposes.
 
 This project uses the following programming languages and libraries:
 
-- [HTML & CSS]   - The very basic HTML & CSS
+- [HTML & CSS] - The very basic HTML & CSS
 - [Google Fonts] - The official Fonts provided by Google
 - [Ion Icons] - Ionic icons
 - [Grid system] - pure CSS Gridding system (Bootstrap like made from scratch)
