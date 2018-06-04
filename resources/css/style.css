@@ -1,0 +1,31 @@
+/* ------------------------------ */
+/*Colors:
+/*Accent color (teal) : rgb(3, 77, 64)
+  Highlighting color  : light teal:  #b2dfdb
+  Background color    : pink : #ffebee
+  Seperator color     : dark grey : #313131
+/* ------------------------------ */
+
+/* ------------------------------ */
+
+/* Basic setup 
+/* ------------------------------ */
+body {
+    margin: 0;
+    font-family: Arial;
+    background: #ffebee;
+  }
+  
+  html {
+    background-color: #fff;
+    color: #555;
+    font-family: "Lora", "Arial", "sans-serif";
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+  }
+  
+  .main {
+    margin: 0 auto;
+    width: 80%;
+    background: #fff;
+  }
