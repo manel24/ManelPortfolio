@@ -27,10 +27,12 @@ This project uses the following programming languages and libraries:
 ```bash
 $ npm install
 $ npm start
+```
 
 ### TODO
 
 - Fix some CCSS issues
+- Going responsive
 
 ### Author
 
@@ -40,4 +42,3 @@ $ npm start
 
 [google fonts]: https://fonts.googleapis.com
 [ion icons]: https://ionicons.com/
-```
