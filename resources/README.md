@@ -18,6 +18,16 @@ This project uses the following programming languages and libraries:
 - [Ion Icons] - Ionic icons
 - [Grid system] - pure CSS Gridding system (Bootstrap like made from scratch)
 
+### Build the website
+
+> the project requires [Node.js](https://nodejs.org/) to run.
+
+### Using NPM
+
+```bash
+$ npm install
+$ npm start
+
 ### TODO
 
 - Fix some CCSS issues
@@ -30,3 +40,4 @@ This project uses the following programming languages and libraries:
 
 [google fonts]: https://fonts.googleapis.com
 [ion icons]: https://ionicons.com/
+```
