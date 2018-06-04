@@ -97,7 +97,7 @@ html {
 .header a:hover,
 .sticky a:active,
 .sticky a:hover {
-   color: #ffebee;
+  color: #ffebee;
   transition: color 0.2s;
 }
 .header li a,
@@ -130,6 +130,8 @@ html {
 
 #about {
   text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 #about img {
   height: 200px;
@@ -153,6 +155,61 @@ html {
   font-size: 120%;
 }
 
+.description p:last-child{
+  margin-bottom: 10px;
+}
+
 #hidden-description {
   display: none;
+}
+/* ------------------------------ */
+
+/*             MOMENTS              */
+
+/* ------------------------------ */
+
+.moments {
+  list-style: none;
+  background-color: #faf5f5;
+}
+
+
+.moments li:first-child{
+    padding-top: 20px;
+}
+.moments li img {
+  width: 30%;
+  border: 2px solid #313131;
+}
+
+.moments li p {
+  width: 100%;
+  font-size: 110%;
+}
+
+.moments li p:first-child{
+  font-family: "Cuprum", cursive;
+}
+.moments li p:last-child{
+  font-family: "Nanum Pen Script", cursive;
+}
+
+.moment {
+  margin: 0 auto;
+  text-align: center;
+  width: 90%;
+}
+.moment p, .moment_desc{
+  text-align: center;
+}
+.moment img {
+  height: auto;
+  transform: scale(1.15);
+  transition: transform 0.5s;
+}
+
+.moment img:hover {
+  transform: scale(1.06);
+  transition: transform 0.5s;
+  opacity: 0.8;
 }
