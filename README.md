@@ -21,6 +21,7 @@ This project uses the following programming languages and libraries:
 ### Build the website
 
 > the project requires [Node.js](https://nodejs.org/) to run.
+> used http-server.
 
 ### Using NPM
 
@@ -38,7 +39,6 @@ $ npm start
 
 - Manel Charouni
 
-**More useful Links**
 
 [google fonts]: https://fonts.googleapis.com
 [ion icons]: https://ionicons.com/
