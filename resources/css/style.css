@@ -36,10 +36,6 @@ html {
   background: #fff;
 }
 
-section {
-  padding: 80px 0;
-}
-
 /* ------------------------------ */
 
 /*       Reusable components      */
@@ -82,41 +78,34 @@ section {
 .collapse {
   display: none;
 }
-.topnav {
+#nav {
   border-top: 1px solid #898989;
 }
 
-.topnav ul,
-.sticky ul {
+.topnav {
   list-style: none;
   text-align: center;
 }
 
-.topnav li,
-.sticky li {
+.topnav li {
   display: inline-block;
   margin-right: 2em;
 }
 
 .topnav a:link,
-.topnav a:visited,
-.sticky a:link,
-.sticky a:visited {
+.topnav a:visited {
   color: rgb(3, 77, 64);
   transition: color 0.2s;
 }
 
 .topnav a:active,
-.topnav a:hover,
-.sticky a:active,
-.sticky a:hover {
+.topnav a:hover {
   color: #c78891b6;
   transition: color 0.2s;
 }
 
 h3,
-.topnav li a,
-.sticky li a {
+.topnav li a {
   text-decoration: none;
   transition: color 0.2s;
   font-family: "Cuprum", "Arial";
@@ -131,8 +120,10 @@ h3,
   top: 0;
   background: #ffffff;
   opacity: 0.8;
-  border-bottom: 1px outset #898989;
+  border-top: none;
+  box-shadow: 0 2px 2px #efefef;
   width: 80%;
+  overflow-x: hidden;
 }
 
 .heading {

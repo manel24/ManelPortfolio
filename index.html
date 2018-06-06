@@ -7,7 +7,7 @@
     <title>Manel Charouni professional portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" media="screen" href="resources/css/style.css" />
-    <link rel="stylesheet" type="text/css" media="screen" href="resources/css/queries.css" />
+    <!-- <link rel="stylesheet" type="text/css" media="screen" href="resources/css/queries.css" /> -->
     <link href="https://unpkg.com/ionicons@4.1.2/dist/css/ionicons.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="vendors/css/grid.css">
     <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i|Nanum+Pen+Script" rel="stylesheet">
@@ -18,8 +18,8 @@
     <div class="main">
         <div id="home" class="top-container">
         </div>
-        <nav id="nav" class="topnav">
-            <ul>
+        <nav id="nav">
+            <ul class="topnav">
                 <li>
                     <a href="#">HOME</a>
                 </li>
@@ -155,21 +155,22 @@
                     </li>
                     <li>
                         <a href="https://github.com/manel24">
-                            <i class="ion-logo-github social-icon ">
+                            <i class="ion-logo-github social-icon">
                             </i>
                         </a>
                     </li>
                     <li>
                         <a href="">
-                            <i class="ion-logo-skype social-icon ">
+                            <i class="ion-logo-skype social-icon">
                             </i>
                         </a>
                     </li>
                 </ul>
             </div>
             <div class="row copyrights">
-                <a href="#home">
-                    <i class="ion-ios-arrow-up"></i>
+                <a href="#" class="js--scroll-to-top">
+                    <i class="ion-ios-arrow-up">
+                    </i>
                     <p>Back to Top</p>
                 </a>
                 <p>
@@ -179,80 +180,9 @@
 
         </footer>
     </div>
-    <!-- TODO: externalize this code (in the main.js), for now, there's an issue when I put it in the file -->
-    <script>
-        $(document).ready(function () {
-            // Add scrollspy to <body>
-            $('body').scrollspy({
-                target: "#nav",
-                offset: 50
-            });
-
-            // Add smooth scrolling on all links inside the navbar
-            $("#nav ul li a").on('click', function (event) {
-                // Make sure this.hash has a value before overriding default behavior
-                if (this.hash !== "") {
-                    // Prevent default anchor click behavior
-                    event.preventDefault();
-
-                    // Store hash
-                    var hash = this.hash;
-
-                    // Using jQuery's animate() method to add smooth page scroll
-                    // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-                    $('html, body').animate({
-                        scrollTop: $(hash).offset().top
-                    }, 900, function () {
-
-                        // Add hash (#) to URL when done scrolling (default click behavior)
-                        window.location.hash = hash;
-                    });
-                } // End if
-            });
-        });
-        window.onscroll = function () {
-            stickHeader()
-        };
-
-        var header = document.getElementById("nav");
-        var sticky = header.offsetTop;
-        var read_more = document.getElementById("read-more")
-
-        function stickHeader() {
-            if (window.pageYOffset >= sticky) {
-                header.classList.remove("topnav");
-                header.classList.add("sticky");
-            } else {
-                header.classList.remove("sticky");
-                header.classList.add("topnav");
-            }
-        }
-
-        function toggleVisibility() {
-            var p = document.getElementById("hidden-description");
-            if (p.style.display === "none") {
-                p.style.display = "block";
-                read_more.innerText = "Read less"
-            } else {
-                p.style.display = "none";
-                read_more.innerText = "Read more"
-
-            }
-        }
-
-        function toggleDisplay() {
-            var x = document.getElementById("nav");
-            var current_class = x.className;
-            if ((x.className === "topnav") || (x.className === "sticky")) {
-                x.className += " responsive";
-            } else {
-                x.className = "topnav";
-            }
-        }
-    </script>
-<!-- <script src="resources/js/main.js"></script>-->
-
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="resources/js/main.js"></script>
+
 </body>
 
 </html>

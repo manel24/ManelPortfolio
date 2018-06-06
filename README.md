@@ -39,6 +39,5 @@ $ npm start
 
 - Manel Charouni
 
-
 [google fonts]: https://fonts.googleapis.com
 [ion icons]: https://ionicons.com/
