@@ -114,6 +114,7 @@ h3,
 }
 
 /* TODO:  fix this issue: pictures appearing over the transparent nav header when scrolling */
+/* STICKY NAVBAR DESIGN   */
 
 .sticky {
   position: fixed;
@@ -131,6 +132,19 @@ h3,
   padding: 10px 30px;
 }
 
+/*  RESPONSIVE NAVBAR : MOBILE NAVIGATION   */
+.collapse-nav-icon {
+  float: right;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+  display: none;
+}
+
+.collapse-nav-icon i {
+  font-size: 200%;
+  color: rgb(26, 15, 15);
+}
 /* ------------------------------ */
 
 /*             ABOUT              */

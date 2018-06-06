@@ -33,23 +33,29 @@
     text-align: left;
   }
 }
-
+*/
 @media screen and (max-width: 834px) {
-  .sticky.responsive,
-  .topnav.responsive {
-    position: relative;
+  .top-container{
+    display: none;
   }
-
-  .sticky.responsive .collapse,
-  .topnav.responsive .collapse {
-    position: absolute;
-    right: 0;
-    top: 0;
+  .collapse-nav-icon {
+    display: inline-block;
   }
-  .sticky.responsive li,
-  .topnav.responsive li {
-    float: none;
+  .topnav{
+    display: none;
+  }
+  .topnav {
+    float: left;
+  }
+  .topnav li {
     display: block;
     text-align: left;
   }
-} */
+  .topnav li a:link,
+  .topnav li a:visited {
+    display: block;
+    border: 0;
+    text-align: left;
+    padding: 1px 0;
+  }
+}

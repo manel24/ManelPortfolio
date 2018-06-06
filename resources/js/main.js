@@ -16,7 +16,7 @@ $(document).ready(function() {
       {
         scrollTop: $($.attr(this, "href")).offset().top
       },
-     1000
+      1000
     );
   });
   var nav = document.getElementById("nav");
@@ -47,6 +47,19 @@ $(document).ready(function() {
     }
   }
   /* getting the navbar responsive */
+
+  $(".--js-nav-icon").click(function() {
+    var nav = $(".--js-topnav");
+    nav.slideToggle(200);
+    var i = $(".--js-nav-icon i");
+    if (i.hasClass("ion-md-menu")) {
+      i.removeClass("ion-md-menu");
+      i.addClass("ion-md-close");
+    } else {
+      i.removeClass("ion-md-close");
+      i.addClass("ion-md-menu");
+    }
+  });
   function toggleDisplay() {
     var x = document.getElementById("nav");
     var current_class = x.className;
