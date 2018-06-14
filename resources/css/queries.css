@@ -1,61 +1,54 @@
-/*Big tablets to 1200px (widths smaller than the 1140px row */
+/* Small phones to small tablets: from  481 to 646px */
 
-/* @media only screen and (max-width: 1200px) {
+@media screen and (min-width: 481px) and(max-width: 646px) {
+  #projects .btn {
+    font-size: x-small;
+    width: 10px;
+  }
+  .moments li img {
+    width: 80%;
+  }
 }
- */
-/* Small tablet to big tablet: from 768 to 1023px */
-
-/* @media only screen and (max-width: 1023px) {
-} */
-
-/* Small phones to small tablets: from  481 to 767px */
-
-/* @media only screen and (max-width: 767px) {
-} */
-
-/* Small phones: from 0 to 480px */
-
-/*@media only screen and (max-width: 480px) {
+/* Small screen*/
+@media screen and (max-width: 834px) {
   .top-container {
-    width: 100%;
-  }
-}
-
-@media screen and (max-width: 834px) {
-  .sticky ul li:not(:first-child),
-  .topnav ul li:not(:first-child) {
-    display: none;
-  }
-  .sticky ul li:last-child,
-  .topnav ul li:last-child {
-    float: right;
-    display: block;
-    text-align: left;
-  }
-}
-*/
-@media screen and (max-width: 834px) {
-  .top-container{
     display: none;
   }
   .collapse-nav-icon {
     display: inline-block;
   }
-  .topnav{
+  .topnav {
     display: none;
   }
   .topnav {
-    float: left;
+    text-align: center;
   }
   .topnav li {
     display: block;
-    text-align: left;
+    text-align: center;
   }
   .topnav li a:link,
   .topnav li a:visited {
     display: block;
     border: 0;
-    text-align: left;
+    text-align: center;
     padding: 1px 0;
+  }
+
+  .topnav a:active,
+  .topnav a:hover {
+    background-color: #c78891b6;
+    color: #fff;
+    transition: color 0.2s, background-color 0.2s;
+    width: 100%;
+  }
+  #about {
+    margin-top: 10px;
+  }
+}
+
+@media screen and (max-width:737px){
+  .project{
+    display: block;
   }
 }

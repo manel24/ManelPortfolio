@@ -45,7 +45,7 @@ html {
 .btn {
   border: 1px solid #313131;
   border-left: 10px solid #313131;
-  padding: 10px 30px;
+  padding: 0.5em 2em;
   background: rgb(3, 77, 64);
   color: #b2dfdb;
   text-decoration: none;
@@ -53,7 +53,9 @@ html {
   font-size: medium;
   font-family: "Cuprum", "Arial";
 }
-
+.btn a {
+  width: 100%;
+}
 .btn:hover {
   cursor: pointer;
   background: #ffebee;
@@ -72,14 +74,16 @@ html {
   background-position: center;
   background-size: cover;
   text-align: center;
-  height: 20em;
+  height: 12.5em;
 }
 
 .collapse {
   display: none;
 }
+
 #nav {
   border-top: 1px solid #898989;
+  z-index: 1;
 }
 
 .topnav {
@@ -114,6 +118,7 @@ h3,
 }
 
 /* TODO:  fix this issue: pictures appearing over the transparent nav header when scrolling */
+
 /* STICKY NAVBAR DESIGN   */
 
 .sticky {
@@ -133,6 +138,7 @@ h3,
 }
 
 /*  RESPONSIVE NAVBAR : MOBILE NAVIGATION   */
+
 .collapse-nav-icon {
   float: right;
   top: 0;
@@ -145,6 +151,7 @@ h3,
   font-size: 200%;
   color: rgb(26, 15, 15);
 }
+
 /* ------------------------------ */
 
 /*             ABOUT              */
@@ -226,7 +233,7 @@ h3,
 }
 
 .moments li img {
-  width: 30%;
+  width: 25%;
   border: 2px solid #313131;
 }
 
@@ -272,8 +279,6 @@ h3,
 
 /* ------------------------------ */
 
-/* TODO: Harmonize the sizes (height/width) of the projects     */
-
 #projects {
   margin-top: 5px;
   margin-bottom: 5px;
@@ -286,8 +291,8 @@ h3,
 }
 
 .project img {
+  height: 5em;
   width: 80%;
-  height: auto;
   transform: scale(1.06);
   transition: transform 0.5s;
   opacity: 1;
