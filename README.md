@@ -1,6 +1,6 @@
 # Personal Portfolio
 
-It is a Web Portfolio designed and developed for me for self-selling purposes.
+It is a Web Portfolio designed and developed for Manel Charouni for self-selling purposes.
 
 ## Features
 
@@ -19,6 +19,9 @@ This project uses the following programming languages and libraries:
 - [Grid system] - pure CSS Gridding system
 - [jQuery] - TO enable the UI interactions
 
+### Hosting
+
+hosted using Github pages on : https://manel24.github.io/ManelPortfolio/ 
 ### Author
 
 - Manel Charouni
