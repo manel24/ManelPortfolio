@@ -22,6 +22,7 @@ This project uses the following programming languages and libraries:
 ### Hosting
 
 hosted using Github pages on : https://manel24.github.io/ManelPortfolio/ 
+
 ### Author
 
 - Manel Charouni
